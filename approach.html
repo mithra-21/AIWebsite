@@ -5,7 +5,33 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Our Approach — AI for Everyone</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Optional inline page-specific improvements -->
+  <style>
+    .approach-grid .card {
+      background:#f3fff8;
+      border-radius:12px;
+      box-shadow:0 8px 20px rgba(0,0,0,.06);
+      transition: transform .28s ease, box-shadow .28s ease, filter .28s ease;
+    }
+
+    /* If hover-pop already exists, this will use it; otherwise, this covers it */
+    .approach-grid .card:hover {
+      transform: scale(1.06);
+      filter: brightness(1.10);
+      box-shadow:0 14px 30px rgba(0,0,0,.12);
+    }
+
+    .target-box {
+      background:#f7fff9;
+      padding:1.5rem;
+      border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,.04);
+      margin-top:2rem;
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
@@ -24,28 +50,30 @@
     <p>We teach with the head, hand and heart model — understanding, building and sharing.</p>
 
     <section class="approach-grid">
-      <div class="card">
+      <div class="card hover-pop">
         <h3>Head</h3>
         <p>Explain how AI works: pattern recognition, fairness, limitations, and ethics.</p>
       </div>
-      <div class="card">
+
+      <div class="card hover-pop">
         <h3>Hand</h3>
         <p>Tools and hands-on projects: Teachable Machine, small LLM demos, dataset creation.</p>
       </div>
-      <div class="card">
+
+      <div class="card hover-pop">
         <h3>Heart</h3>
         <p>Encourage mentoring, community sharing and local language content to make AI inclusive.</p>
       </div>
     </section>
 
-    <section>
+    <section class="target-box">
       <h2>Target groups</h2>
       <ul>
         <li>KuttyMakers (ages 10–17) — pattern games and storybooks</li>
         <li>Young Makers (students & early professionals) — hackathons, projects</li>
         <li>Friends of the Movement — educators, professionals, community leaders</li>
       </ul>
-      <p>More detail in the campaign PDF. :contentReference[oaicite:5]{index=5}</p>
+      <p>More detail in the campaign PDF.</p>
     </section>
 
   </main>
@@ -55,6 +83,7 @@
       <p>© AI for Everyone — Kerala</p>
     </div>
   </footer>
+
   <script src="scripts.js"></script>
 </body>
 </html>

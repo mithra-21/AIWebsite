@@ -1,6 +1,5 @@
 :root{
-  --accent:#0b6e4f; /* Kerala-green-ish */
-  --muted:#666;
+  --accent:#064e37; 
   --bg:#ffffff;
   --maxw:1100px;
   --radius:12px;
@@ -16,11 +15,13 @@ body{
   }
 .container{
   max-width:var(--maxw);
-   margin:0 auto; 
-   padding:1.25rem
-  }
+  margin:0 auto; 
+  padding:1.25rem;
+
+}
+
 .site-header{
-  background:#fff; 
+  background:#c6f0c2; 
   border-bottom:1px solid #eee; 
   position:sticky; 
   top:0;
@@ -70,12 +71,15 @@ body{
    text-decoration:none;
     border-radius:8px}
 .features{
-  display:grid; 
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-   gap:1rem; margin:2rem 0
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 1rem 0;
+  justify-content: center; /* centers the grid */
+  max-width: 10000000000000000px;
   }
 .features article{
-  background:#fff; 
+  background:#bbf3c4; 
   padding:1rem; border-radius:10px;
    box-shadow:0 6px 18px rgba(12,12,12,.04)
   }
@@ -142,9 +146,29 @@ blockquote{
   font-size:.9rem
 }
 
+
+
+
+/* Smooth enlarge + brighten */
+.hover-pop {
+  transition: transform .28s ease, filter .28s ease, box-shadow .28s ease;
+  will-change: transform, filter;
+}
+
+.hover-pop:hover {
+  transform: scale(1.06);
+  filter: brightness(1.18);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+
 @media (min-width:900px){
   .hero-inner{display:flex; 
     
     align-items:center; justify-content:space-between}
   .hero-inner h1{font-size:2.6rem}
 }
+ .c{
+  align-items: center;
+  
+ }
